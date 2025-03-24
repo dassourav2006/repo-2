@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourav Das Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to right, #111, #222);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header .subtitle {
+            font-size: 1.5rem;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            letter-spacing: 8px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        header .year {
+            font-size: 1.8rem;
+            margin-top: 10px;
+            letter-spacing: 1rem;
+            color: #aaa;
+        }
+
+        header .name {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .portfolio-item {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .portfolio-item p {
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .pen {
+            display: block;
+            max-width: 150px;
+            margin: 30px auto;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header .subtitle, header .year, header .name {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="subtitle">Graphics & Motion Graphics designer</div>
+        <h1>PORTFOLIO</h1>
+        <div class="year">2 0 2 5</div>
+        <div class="name">SOURAV DAS</div>
+        <img src="Screenshot 2025-02-09 220728.png" alt="Pen Image" class="pen">
+    </header>
+
+    <section class="portfolio">
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project Title 1</h3>
+            <p>Description of the project goes here.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project Title 2</h3>
+            <p>Description of the project goes here.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project3.jpg" alt="Project 3">
+            <h3>Project Title 3</h3>
+            <p>Description of the project goes here.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Sourav Das. All rights reserved.
+    </footer>
+
+    <script>
+        // Simple animation or interaction can go here if needed
+        console.log("Portfolio site loaded successfully.");
+    </script>
+</body>
+</html>
